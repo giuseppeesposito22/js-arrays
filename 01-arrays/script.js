@@ -2,6 +2,7 @@ const teachers = ["Nathan", "Ed", "Fabio", "Phil", "Carlo", "Lewis", "Luca"]; //
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
+//ex.1
 const fourthTeacher = teachers[3];
 console.log(fourthTeacher);
 
