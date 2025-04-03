@@ -2,13 +2,14 @@ const teachers = ["Nathan", "Ed", "Fabio", "Phil", "Carlo", "Lewis", "Luca"]; //
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = teachers;
 
-for (let i = 0; i < teachers.length / 2; i++) {
-  const counterIndex = teachers.length;
-  const actualTeacher = teachers[i];
-  teachers[i] = teachers[counterIndex - 1 - i];
-  teachers[counterIndex - 1 - i] = actualTeacher;
+const reversedTeachers = teachers.slice();
+
+for (let i = 0; i < reversedTeachers.length / 2; i++) {
+  const counterIndex = reversedTeachers.length;
+  const actualTeacher = reversedTeachers[i];
+  reversedTeachers[i] = reversedTeachers[counterIndex - 1 - i];
+  reversedTeachers[counterIndex - 1 - i] = actualTeacher;
 }
 
 console.log(reversedTeachers);
