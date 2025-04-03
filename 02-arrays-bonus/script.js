@@ -52,7 +52,11 @@ console.log(isFabioPresent);
 let teachersString = "";
 
 for (let i = 0; i < teachers.length; i++) {
-  teachersString += `${teachers[i]} ,`;
+  if (i === teachers.length - 1) {
+    teachersString += `${teachers[i]}`;
+  } else {
+    teachersString += `${teachers[i]}, `;
+  }
 }
 
 console.log(teachersString);
